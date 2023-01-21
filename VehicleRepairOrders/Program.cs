@@ -33,8 +33,9 @@ public class Program
 
             var orderStatus = customerOrderService.GetOrderStatus(inputs);
             orderStatusPrinter.Print(orderStatus);
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
-            Console.Clear();
         } while (true);
     }
 }
