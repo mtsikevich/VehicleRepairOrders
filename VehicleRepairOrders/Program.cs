@@ -16,7 +16,7 @@ public class Program
 
     private static void RunApplication(IServiceProvider serviceProvider)
     {
-        var customerOrderService = serviceProvider.GetService<CustomerOrderService>()!;
+        var customerOrderService = serviceProvider.GetService<IOrderService>()!;
         var orderStatusPrinter = serviceProvider.GetService<IOrderStatusPrinter>()!;
         var inputs = new Input();
 
