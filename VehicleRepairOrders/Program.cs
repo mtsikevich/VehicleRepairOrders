@@ -8,7 +8,7 @@ public class Program
     {
         var serviceProvider = new ServiceCollection()
             .AddSingleton<IOrderStatusPrinter, OrderStatusConsolePrintingService>()
-            .AddSingleton<CustomerOrderService>()
+            .AddSingleton<IOrderService, CustomerOrderService>()
             .BuildServiceProvider();
 
         RunApplication(serviceProvider);
