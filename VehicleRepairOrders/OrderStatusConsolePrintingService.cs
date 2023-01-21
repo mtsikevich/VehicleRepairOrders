@@ -4,6 +4,6 @@ public class OrderStatusConsolePrintingService: IOrderStatusPrinter
 {
     public void Print(OrderStatus orderStatus)
     {
-        throw new NotImplementedException();
+        Console.WriteLine(orderStatus.ToString());
     }
 }
