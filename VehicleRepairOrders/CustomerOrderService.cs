@@ -1,8 +1,8 @@
 ﻿namespace VehicleRepairOrders;
 
-public class CustomerOrderService
+public class CustomerOrderService: IOrderService
 {
-    public OrderStatus GetOrderStatus(Input inputs)
+    public OrderStatus GetOrderStatus(Input input)
     {
         throw new NotImplementedException();
     }
